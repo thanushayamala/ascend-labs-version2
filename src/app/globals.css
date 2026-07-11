@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #030712;
+  --color-brand-elevated: #0B1220;
+  --color-brand-secondary: #111827;
+  --color-brand-accent: #2563EB;
+  --color-brand-violet: #7C3AED;
+  --color-brand-success: #22C55E;
+  --color-brand-text: #F9FAFB;
+  --color-brand-muted: #94A3B8;
+  --color-brand-border: rgba(255, 255, 255, 0.06);
+  --color-brand-border-hover: rgba(59, 130, 246, 0.28);
+  
+  --font-sora: var(--font-sora);
+  --font-inter: var(--font-inter);
+}
+
+:root {
+  background-color: #030712;
+  color: #F9FAFB;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #030712;
+  color: #F9FAFB;
+}
+
+/* Custom premium scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #030712;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.02);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid #2563EB;
+  outline-offset: 4px;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #F9FAFB 0%, #94A3B8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.accent-gradient {
+  background: linear-gradient(135deg, #2563EB 0%, #7C3AED 100%);
+}
+
+.accent-text-gradient {
+  background: linear-gradient(135deg, #3B82F6 0%, #A78BFA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Technical radial dot pattern for visual structure */
+.bg-radial-grid {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Subtle border glow utilities */
+.glow-border-blue {
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.05);
+  border-color: rgba(37, 99, 235, 0.15);
+}
+
+.glow-border-purple {
+  box-shadow: 0 0 15px rgba(124, 58, 237, 0.05);
+  border-color: rgba(124, 58, 237, 0.15);
+}
+
+.glow-border-red {
+  box-shadow: 0 0 15px rgba(239, 68, 68, 0.03);
+  border-color: rgba(239, 68, 68, 0.12);
+}
